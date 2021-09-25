@@ -1,7 +1,7 @@
 name: Issue and Bug report🐛❌
 description: File/Create an Issue
 title: "[ISSUES]: <Your Issue's brief title goes here> "
-labels: [ISsues, Bug, Triage, Idea,Other]  
+labels: [Issues, Bug, Triage, Idea,Other]  
 body:
   - type: markdown
     attributes:
