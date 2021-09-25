@@ -1,17 +1,15 @@
-name: Support Form
-description: You can request for support from our team
-title: "[SUPPORT]: <Your Support request's brief Description goes here> "
-labels: [Support, Triage, Idea,Other]
-assignees:
-  
+name: Features💡☀
+description: Request for a new feature
+title: "[FEATURES]: <Your Feature's title Description goes here> "
+labels: [Features, Triage, Idea,Other]
 body:
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you want from us?
-      placeholder: Elaborate on your issue
-      value: "I want the team to demonstrate...."
+      label: What do you want to see happening?
+      description: What are the specific features you would like to see?
+      placeholder: Tell us what you see!
+      value: "I want santa to gift me a fidget spinner."
     validations:
       required: true
   - type: textarea

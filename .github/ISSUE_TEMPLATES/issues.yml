@@ -1,17 +1,17 @@
-name: Issue Form❌
+name: Issue and Bug report🐛❌
 description: File/Create an Issue
-title: "[ISSUE]: <Your Issue's brief Description goes here> "
-labels: [Triage, Issue, Other]
+title: "[ISSUES]: <Your Issue's brief title goes here> "
+labels: [ISsues, Bug, Triage, Idea,Other]  
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this Issue report!
+        Thanks for taking the time to fill out this Bug/Issue report!
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
+      description: Explain elaborately about the bug/issue you came across.
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
@@ -19,16 +19,19 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: Is this a broswer specific issue? If so which browsers are you seeing this problem on?
+      label: Is this unique to browsers, if yes what browsers are you seeing this problem on?
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
+        - Brave
+        - Others
   - type: textarea
     id: multimedia
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      placeholder: Please upload your multimedia(screenshots and video) here and/or log ouput.
+      placeholder: Please upload your multimedia(screenshots and video) here and/or console(log) output
+      
