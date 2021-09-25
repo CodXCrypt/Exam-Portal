@@ -2,8 +2,7 @@ name: Support Form
 description: You can request for support from our team
 title: "[SUPPORT]: <Your Support request's brief Description goes here> "
 labels: [Support, Triage, Idea,Other]
-assignees:
-  
+
 body:
   - type: textarea
     id: what-happened
