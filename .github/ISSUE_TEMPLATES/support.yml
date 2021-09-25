@@ -1,0 +1,23 @@
+name: Support💇‍♂️
+description: Request for specific support
+title: "[SUPPORT]: Support request "
+labels: [Support, Idea, Other]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this support request! We're glad to help you. Please give us time to work on this report!
+  - type: textarea
+    id: support-request
+    attributes:
+      label: What would you like to be resolved?
+      placeholder: Tell us what you see!
+      value: "I expect this feature to run this way."
+    validations:
+      required: true
+  - type: textarea
+    id: multimedia
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      placeholder: Please upload your multimedia(screenshots and video) here and/or log ouput.
