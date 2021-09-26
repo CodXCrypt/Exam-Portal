@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App"
+import HelloWorld from "./components/App.jsx";
 
 ReactDOM.render(
-    <>
-        <App/>
-    </>,
-    document.getElementById('root')
-)
+  <React.StrictMode>
+    <HelloWorld/>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
