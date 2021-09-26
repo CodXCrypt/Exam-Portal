@@ -6,6 +6,7 @@ module.exports = {
     path: path.resolve(__dirname, 'static/frontend'),
     filename: 'main.js'
   },
+  
   module: {
     rules: [
       {
@@ -22,8 +23,16 @@ module.exports = {
               '@babel/preset-react'
             ]
           }
-        }]
+        }],
+      
       }
-    ]
+    ],
+    plugins: [
+      new webpack.ProvidePlugin({
+         "React": "react",
+      }),
+   ],
   }
 }
+
+  // React: 'react' // ReactJS module name in node_modules folder
