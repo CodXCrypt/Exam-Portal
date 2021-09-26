@@ -1,0 +1,22 @@
+name: Support Form
+description: You can request for support from our team
+title: "[SUPPORT]: <Your Support request's brief Description goes here> "
+labels: [Support, Triage, Idea,Other]
+
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you want from us?
+      placeholder: Elaborate on your issue
+      value: "I want the team to demonstrate...."
+    validations:
+      required: true
+  - type: textarea
+    id: multimedia
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      placeholder: Please upload your multimedia(screenshots and video) here and/or console(log) output
+      

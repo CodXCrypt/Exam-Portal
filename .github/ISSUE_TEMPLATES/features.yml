@@ -1,0 +1,21 @@
+name: Features💡☀
+description: Request for a new feature
+title: "[FEATURES]: <Your Feature's title Description goes here> "
+labels: [Features, Triage, Idea,Other]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What do you want to see happening?
+      description: What are the specific features you would like to see?
+      placeholder: Tell us what you see!
+      value: "I want santa to gift me a fidget spinner."
+    validations:
+      required: true
+  - type: textarea
+    id: multimedia
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      placeholder: Please upload your multimedia(screenshots and video) here and/or console(log) output
+      
