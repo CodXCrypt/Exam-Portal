@@ -1,0 +1,45 @@
+{
+  "name": "frontend_views_and_designs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodXCrypt/Exam-Portal.git"
+  },
+  "keywords": [
+    "React",
+    "Django"
+  ],
+  "author": "",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/CodXCrypt/Exam-Portal/issues"
+  },
+  "homepage": "https://github.com/CodXCrypt/Exam-Portal#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "chakra-ui": "^0.3.9",
+    "material-ui": "^0.20.2",
+    "nodemon": "^2.0.13",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
+    "typescript": "^4.4.3",
+    "webpack": "^5.54.0",
+    "yarn.lock": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.8.0"
+  }
+}
