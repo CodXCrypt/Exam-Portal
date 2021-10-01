@@ -10,8 +10,18 @@ class Student(models.Model):
     UniqueID = models.UUIDField()
     Class = models.IntegerField()
     Section = models.CharField(max_length=1, unique=False, blank=False)
-    Subject_One = models.ForeignKey(Subjects, on_delete=models.CASCADE, related_name="Subject One+")
-    Subject_Two = models.ForeignKey(Subjects, on_delete=models.CASCADE, related_name="Subject Two+")
-    Subject_Three = models.ForeignKey(Subjects, on_delete=models.CASCADE, related_name="Subject Three+")
-    Subject_Four = models.ForeignKey(Subjects, on_delete=models.CASCADE, related_name="Subject Four+")
-    Subject_Five = models.ForeignKey(Subjects, on_delete=models.CASCADE, related_name="Subject Five+")
+    Subject_One = models.ForeignKey(
+        Subjects, on_delete=models.CASCADE, related_name="Subject One+"
+    )
+    Subject_Two = models.ForeignKey(
+        Subjects, on_delete=models.CASCADE, related_name="Subject Two+"
+    )
+    Subject_Three = models.ForeignKey(
+        Subjects, on_delete=models.CASCADE, related_name="Subject Three+"
+    )
+    Subject_Four = models.ForeignKey(
+        Subjects, on_delete=models.CASCADE, related_name="Subject Four+"
+    )
+    Subject_Five = models.ForeignKey(
+        Subjects, on_delete=models.CASCADE, related_name="Subject Five+"
+    )
