@@ -13,7 +13,7 @@ class teachers(models.Model):
     Subject = models.ForeignKey(Subjects, on_delete = models.DO_NOTHING)
     Level = models.CharField(max_length = 100, choices = levels)
     Contact = models.ForeignKey(contacts, on_delete = models.CASCADE)
-    Last_Logged_in = models.DateimeField(auto_now_add = True)
+    Last_Logged_in = models.DateTimeField(auto_now_add = True)
     Date_of_registration = models.DateField(auto_created=True)
     Access_Class = models.ForeignKey(UniqueClasses, on_delete = models.CASCADE)
 
