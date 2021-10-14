@@ -1,28 +1,29 @@
-from django.db import models
 from django.contrib.auth.models import User
+from django.db import models
 
-from .subjects import Subjects
-from .uniqueClasses import UniqueClasses
+from .subjects import Subject
 
 
 class Student(models.Model):
-    User = models.ForeignKey(User, on_delete=models.CASCADE)
-    Name = models.CharField(max_length=108, unique=False, blank=False, null=False)
+    User = models.OneToOneField(User, related_name='student', on_delete=models.CASCADE)
+    Name = models.CharField(max_length=108, unique=False, blank=False)
     Class = models.PositiveSmallIntegerField(unique=False, blank=False)
     Section = models.CharField(max_length=1, unique=False, blank=False)
-    UniqueClassID = models.ForeignKey(UniqueClasses, related_name='student')
+    UniqueClassID = models.ForeignKey(
+        "UniqueClasses", related_name='students', on_delete=models.DO_NOTHING
+    )
     Subject_One = models.ForeignKey(
-        Subjects, on_delete=models.CASCADE, related_name="Subject One+"
+        Subject, on_delete=models.CASCADE, related_name="subject_one"
     )
     Subject_Two = models.ForeignKey(
-        Subjects, on_delete=models.CASCADE, related_name="Subject Two+"
+        Subject, on_delete=models.CASCADE, related_name="subject_two"
     )
     Subject_Three = models.ForeignKey(
-        Subjects, on_delete=models.CASCADE, related_name="Subject Three+"
+        Subject, on_delete=models.CASCADE, related_name="subject_three"
     )
     Subject_Four = models.ForeignKey(
-        Subjects, on_delete=models.CASCADE, related_name="Subject Four+"
+        Subject, on_delete=models.CASCADE, related_name="subject_Four"
     )
     Subject_Five = models.ForeignKey(
-        Subjects, on_delete=models.CASCADE, related_name="Subject Five+"
+        Subject, on_delete=models.CASCADE, related_name="subject_five"
     )
